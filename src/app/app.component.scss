@@ -1,0 +1,54 @@
+$color_1: #369;
+$color_2: #444;
+$color_3: #333;
+$color_4: black;
+$color_5: white;
+$color_6: #aaa;
+$color_7: rgba(173, 160, 160, 0.801);
+$font-family_1: Arial, Helvetica, sans-serif;
+$font-family_2: Cambria, Georgia, serif;
+$background-color_1: #eee;
+$background-color_2: black;
+$background-color_3: black;
+
+/* everywhere else */
+h1 {
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: 250%;
+	margin-bottom: 0;
+}
+body {
+	margin: 2em;
+	color: $color_3;
+	font-family: $font-family_2;
+}
+* {
+	font-family: $font-family_1;
+}
+div.transbox {
+	margin: 0 auto;
+	padding: 1em;
+	max-width: fit-content;
+	text-align: center;
+	background-color: $color_7;
+	border: 1px solid black;
+}
+nav {
+	a {
+		padding: 1rem;
+		text-decoration: none;
+		margin: 10px;
+		display: inline-block;
+		background-color: $background-color_1;
+		color: $color_1;
+		border-radius: 4px;
+		&:hover {
+			color: $color_2;
+			background-color: $background-color_2;
+		}
+		&:active {
+			background-color: $background-color_3;
+		}
+	}
+}
